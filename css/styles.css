@@ -142,7 +142,14 @@ a:hover{
 	position:relative;
 	top:1px;
 }
-
+.home-button{
+  background:linear-gradient(to bottom, green 5%, darkgreen 100%);
+  	background-color:lightgreen;
+}
+.home-button:hover{
+  	background:linear-gradient(to bottom, darkgreen 5%, green 100%);
+    	color:lightgreen;
+}
 .skill-row{
   margin: 100px auto 100px auto;
   width: 50%;
