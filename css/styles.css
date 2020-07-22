@@ -143,12 +143,29 @@ a:hover{
 	top:1px;
 }
 .home-button{
+
+
+    box-shadow: 0px 0px 11px -1px #000000;
   background:linear-gradient(to bottom, green 5%, darkgreen 100%);
   	background-color:lightgreen;
+    border-radius:21px;
+    display:inline-block;
+    cursor:pointer;
+    color:#F0E9C8;
+    font-family: 'Fira Sans', sans-serif;
+    font-size:22px;
+    font-weight:normal;
+    padding:16px 44px;
+    text-decoration:none;
 }
 .home-button:hover{
-  	background:linear-gradient(to bottom, darkgreen 5%, green 100%);
-    	color:lightgreen;
+  background-color:#000000;
+  background:linear-gradient(to bottom, darkgreen 5%, green 100%);
+  color:lightgreen;
+}
+.home-button:active {
+	position:relative;
+	top:1px;
 }
 .skill-row{
   margin: 100px auto 100px auto;
