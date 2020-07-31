@@ -1213,6 +1213,7 @@ input[type="radio"] + label:before {
     font-family: 'Font Awesome 5 Brands'; }
 
 /* Image */
+
 .image {
   border-radius: 0.375em;
   border: 0;
@@ -1245,6 +1246,13 @@ input[type="radio"] + label:before {
     width: 100%; }
     .image.main img {
       width: 100%; }
+.pfp0{
+
+  float: left;
+  padding: 0px 30px 10px 0px;
+  width:25em;
+  height:15em;
+}
 
 a.image {
   overflow: hidden; }
