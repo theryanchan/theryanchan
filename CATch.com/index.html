@@ -24,7 +24,7 @@
 
 <body>
 
-  <section id="title">
+  <section class="colored-section" id="title">
     <div class="container-fluid">
       <!-- Nav Bar -->
       <nav class="navbar navbar-expand-lg navbar-dark">
@@ -35,13 +35,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="">Contact</a>
+              <a class="nav-link" href="#footer">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">Download</a>
+              <a class="nav-link" href="#cta">Download</a>
             </li>
           </ul>
         </div>
@@ -71,8 +71,9 @@
   <!-- col-md-6 means we should have a column size of 6 from any medium sized screen and upwards.
 
   so basically, col-[size of screen and upwards you want to have width x]-x -->
-  <section id="features">
 
+  <section class="uncolored-section" id="features">
+<div class="container-fluid">
     <div class="row">
 
       <div class="feature-box col-lg-4">
@@ -96,11 +97,11 @@
     </div>
 
   </section>
-
+</div>
 
   <!-- Testimonials -->
 
-  <section id="testimonials">
+  <section class="colored-section" id="testimonials">
     <!-- Carousel -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="3500" data-pause="hover">
       <ol class="carousel-indicators">
@@ -109,9 +110,9 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
 
-       <!-- contains the content, or slides that will be changed, in the carousel -->
+      <!-- contains the content, or slides that will be changed, in the carousel -->
       <div class="carousel-inner">
-    <!-- see how it is marked active, this is the first slide, and we must have one marked active in order
+        <!-- see how it is marked active, this is the first slide, and we must have one marked active in order
     for the carousel to be visile. -->
         <div class="carousel-item active">
           <h2 class="testimonial-title">"I no longer have to sniff other cats for love. I've found the hottest Feline on CATch.com. Meow."</h2>
@@ -126,7 +127,7 @@
           <em style="font-size: 1rem;">Beverly, Illinois</em>
         </div>
 
-    <!-- third slide stuff -->
+        <!-- third slide stuff -->
         <div class="carousel-item" alt="third testimonial">
           <h2 class="testimonial-title">"With CATch.com's help, the neighbor's cat and I are planning on moving out after our second litter!"</h2>
           <img src="images/kittens-img.jpg" class="testimonial-pic" alt="kittens-profile">
@@ -157,7 +158,7 @@
 
   <!-- Press -->
 
-  <section id="press">
+  <section class="colored-section" id="press">
     <img class="press-logo-img" src="images/techcrunch.png" alt="tc-logo">
     <img class="press-logo-img" src="images/tnw.png" alt="tnw-logo">
     <img class="press-logo-img" src="images/bizinsider.png" alt="biz-insider-logo">
@@ -176,23 +177,25 @@
 
   <!-- Pricing -->
 
-  <section id="pricing">
+  <section class="uncolored-section" id="pricing">
+    <div class="pricing-title">
+      <h2 class="pricing-motto">A Plan for Every Feline's Needs</h2>
+      <p class="pricing-description">Simple and affordable price plans for you and your cat.</p>
+    </div>
 
-    <h2>A Plan for Every Feline's Needs</h2>
-    <p>Simple and affordable price plans for your and your cat.</p>
 
-<!-- Cards for pricing -->
+    <!-- Cards for pricing -->
     <div class="row membership-cards">
       <div class="col-lg-4 col-md-6 pricing-column">
         <div class="card">
           <div class="card-body">
             <h3 class="card-title">Kitten</h3>
-            <h2>Free</h2>
+            <h2 class="price-text">Free</h2>
             <p class="card-text">5 Matches Per Day</p>
             <p class="card-text">10 Messages Per Day</p>
             <p class="card-text">Unlimited App Usage</p>
             <!-- <button type="button" class="btn btn-primary">Sign Up</button> -->
-            <a type="button" href="#" class="btn btn-outline-primary btn-block">Sign Up</a>
+            <a type="button" href="#" class="btn btn-outline-primary btn-lg btn-block">Sign Up</a>
           </div>
         </div>
       </div>
@@ -201,24 +204,24 @@
         <div class="card">
           <div class="card-body">
             <h3 class="card-title">Feline</h3>
-            <h2>$4.99 / mo</h2>
+            <h2 class="price-text">$4.99 / mo</h2>
             <p class="card-text">Unlimited Matches</p>
             <p class="card-text">Unlimited Messages</p>
             <p class="card-text">Unlimited App Usage</p>
-            <a type="button" href="#" class="btn btn-primary btn-block">Sign Up</a>
+            <a type="button" href="#" class="btn btn-primary btn-lg btn-block">Sign Up</a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-12 pricing-column">
+      <div class="col-lg-4 col-md-6 pricing-column">
         <div class="card">
           <div class="card-body">
             <h3 class="card-title">Cat Lady</h3>
-            <h2>$9.99 / mo</h2>
+            <h2 class="price-text">$9.99 / mo</h2>
             <p class="card-text">Pirority Listing</p>
             <p class="card-text">Unlimited Matches & Messages</p>
             <p class="card-text">Unlimited App Usage</p>
-            <a type="button" href="#" class="btn btn-primary btn-block">Sign Up</a>
+            <a type="button" href="#" class="btn btn-primary btn-lg btn-block">Sign Up</a>
           </div>
         </div>
       </div>
@@ -228,20 +231,27 @@
 
   <!-- Call to Action -->
 
-  <section id="cta">
+  <section class="colored-section" id="cta">
 
-    <h3>Find the True Love of Your Cat's Life Today.</h3>
-    <button type="button">Download</button>
-    <button type="button">Download</button>
+    <h3 class="cta-motto">Find the True Love of Your Cat's Life Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg cta-btn"><span class="fab fa-apple"></span> Download</button>
+    <button type="button" class="btn btn-light btn-lg cta-btn"><span class="fab fa-google-play"></span> Download</button>
 
   </section>
 
 
   <!-- Footer -->
 
-  <footer id="footer">
+  <footer class="uncolored-section" id="footer">
+    <a class="footer-social-media-icon-link" href="#"><i class="fab fa-twitter footer-icon"></i></a>
+    <a class="footer-social-media-icon-link" href="#"><i class="fab fa-facebook-f footer-icon"></i></a>
+    <a class="footer-social-media-icon-link" href="#"><i class="fab fa-instagram footer-icon"></i></a>
+    <a class="footer-social-media-icon-link" href="#"><i class="fas fa-envelope footer-icon"></i></a>
 
-    <p>© Copyright 2018 CATch.com</p>
+
+
+
+    <p class="copyright">© Copyright 2020 CATch.com</p>
 
   </footer>
 
