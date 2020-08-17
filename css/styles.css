@@ -118,10 +118,12 @@ a:hover{
 } */
 .portfolio-left-align-image{
   float: left;
-  background-color: lightgreen;
   width: 25%;
   border-radius: 50px;
   margin-right: 30px;
+}
+.science-img{
+    background-color: lightgreen;
 }
 .computer-image {
   float: right;
@@ -135,9 +137,10 @@ a:hover{
   width: 25%;
   border-radius: 50px;
   margin-left: 30px;
-  background-color: lightpink;
 }
-
+.cat-img {
+    background-color: lightpink;
+}
 .middle-container {
   margin: 0 auto 70px auto;
 }
