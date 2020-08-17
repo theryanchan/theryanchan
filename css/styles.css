@@ -109,7 +109,14 @@ a:hover{
   border-radius: 50px;
   margin-right: 30px;
 }
-.science-image{
+/* .science-image{
+  float: left;
+  background-color: lightgreen;
+  width: 25%;
+  border-radius: 50px;
+  margin-right: 30px;
+} */
+.portfolio-left-align-image{
   float: left;
   background-color: lightgreen;
   width: 25%;
@@ -122,13 +129,15 @@ a:hover{
   border-radius: 50px;
   margin-left: 30px;
 }
-.cat-image {
+
+.portfolio-right-align-image {
   float: right;
   width: 25%;
   border-radius: 50px;
   margin-left: 30px;
   background-color: lightpink;
 }
+
 .middle-container {
   margin: 0 auto 70px auto;
 }
@@ -207,10 +216,14 @@ a:hover{
   margin: 30px 0 0 0;
   color: white;
 }
+
 .footer-link {
   text-decoration: none;
   margin: auto 30px auto 30px;
   color: #566bdd;
+}
+.footer-link:hover {
+  color: white;
 }
 .copyright{
   font-size: .76rem;
