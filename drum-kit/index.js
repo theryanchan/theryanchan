@@ -2,73 +2,20 @@
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
     checkKeyAndPlayAudio(this.innerHTML);
-    // interacted(event.key);
+
+    animate(this.innerHTML);
   });
 }
 
 // checking for keyboard presses
-document.addEventListener("keydown", function() {
+document.addEventListener("keydown", function(event) {
 
 
   // this.classList.add(drum-keyed);
   checkKeyAndPlayAudio(event.key);
-  // interacted(event.key);
+  animate(event.key);
 });
 
-// //function to change color when interacted with
-// function interacted(keyValue) {
-//   switch (keyValue) {
-//     case "w":
-//       document.querySelector(".w").classList.add("drum-keyed");
-//       document.querySelector(".w").addEventListener("keyup", leave() {
-//         document.querySelector(".w").remove("drum-keyed");
-//       break;
-//
-//     case "a":
-//       document.querySelector(".a").classList.add("drum-keyed");
-//       document.querySelector(".a").addEventListener("keyup", leave() {
-//         document.querySelector(".a").remove("drum-keyed");
-//       break;
-//
-//     case "s":
-//
-//       document.querySelector(".s").classList.add("drum-keyed");
-//       document.querySelector(".s").addEventListener("keyup", leave() {
-//         document.querySelector(".s").remove("drum-keyed");
-//       break;
-//
-//     case "d":
-//
-//       document.querySelector(".d").classList.add("drum-keyed");
-//       document.querySelector(".d").addEventListener("keyup", leave() {
-//         document.querySelector(".d").remove("drum-keyed");
-//     break;
-//
-//     case "j":
-//       document.querySelector(".j").classList.add("drum-keyed");
-//       document.querySelector(".j").addEventListener("keyup", leave() {
-//         document.querySelector(".j").remove("drum-keyed");
-//     break;
-//
-//     case "k":
-//
-//       document.querySelector(".k").classList.add("drum-keyed");
-//       document.querySelector(".k").addEventListener("keyup", leave() {
-//         document.querySelector(".k").remove("drum-keyed");
-//     break;
-//
-//     case "l":
-//       document.querySelector(".l").classList.add("drum-keyed");
-//       document.querySelector(".l").addEventListener("keyup", leave() {
-//         document.querySelector(".l").remove("drum-keyed");
-//     break;
-//
-//     default:
-//       console.log(buttonInnerHTML);
-//
-//   }
-//
-// }
 
 //function to assign keyboard presses
 function checkKeyAndPlayAudio(keyValue) {
@@ -110,4 +57,14 @@ function checkKeyAndPlayAudio(keyValue) {
       console.log(buttonInnerHTML);
 
   }
+}
+
+
+//function to make animation when key is pressed or btn clicked on.
+function animate(currentKey) {
+  var pressedButton = document.querySelector("." + currentKey);
+  pressedButton.classList.add("pressed");
+  setTimeout(function() {
+    pressedButton.classList.remove("pressed");
+  }, 150);
 }

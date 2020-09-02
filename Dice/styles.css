@@ -40,6 +40,15 @@
   display: inline-block;
 
 }
+.homepage {
+  text-decoration: none;
+  color: #EEEEEE;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+}
+.homepage:hover {
+  color: #4ECCA3;
+}
 
 body {
   background-color: #393E46;
