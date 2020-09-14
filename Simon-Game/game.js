@@ -47,8 +47,6 @@ function checkAnswer(currentLevel){
 
   if (userClickedPattern[currentLevel] === gamePattern[currentLevel]){
     if(userClickedPattern.length === gamePattern.length){
-      console.log("success");
-
       setTimeout(function(){
         nextSequence();
       }, 1000);
@@ -63,8 +61,6 @@ function checkAnswer(currentLevel){
           $("body").removeClass("game-over");
     },200);
 
-
-    console.log("wrong");
   }
 }
 
