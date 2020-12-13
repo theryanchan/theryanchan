@@ -11,7 +11,7 @@ var gameIndex = 0;
 
 
 //listens for a keydown to start the game
-$(document).on("keydown", function(){
+$(document).on("click", function(){
   if (!started){
     $("h1").text("Level 1");
     setTimeout(function(){nextSequence()}, 800);
