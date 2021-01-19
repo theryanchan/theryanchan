@@ -105,6 +105,6 @@ function flashColor(color){
 // function that plays the mp3 of the color passed in
 function playColorSound(color) {
     var audio = new Audio("sounds/" + color + ".mp3");
-    audio.volume=0.0005;
+    audio.volume=0.08;
     audio.play();
 };
